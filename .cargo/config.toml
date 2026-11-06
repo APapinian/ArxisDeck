@@ -1,0 +1,9 @@
+# Build from the crate sources in vendor/ (made with `cargo vendor --locked vendor`), so the
+# build needs no network — required for the Flatpak build. After changing dependencies,
+# run `cargo vendor --locked vendor` again and review the licence table in
+# docs/research/license-review.md.
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"

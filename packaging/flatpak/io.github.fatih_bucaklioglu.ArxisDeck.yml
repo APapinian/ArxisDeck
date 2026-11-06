@@ -1,0 +1,66 @@
+# Flatpak build recipe for Arxis Deck.
+#
+# Qt 6 comes from the KDE runtime on Flathub; Rust from the freedesktop SDK extension that
+# matches its base (KDE 6.11 is built on freedesktop 25.08). The Rust crates are vendored in
+# vendor/, so the build runs fully offline. See packaging/README.md for the steps.
+
+id: io.github.fatih_bucaklioglu.ArxisDeck
+runtime: org.kde.Platform
+runtime-version: '6.11'
+sdk: org.kde.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: arxis-deck
+
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  # GPU, plus the controller: Arxis Deck reads gamepads from /dev/input itself.
+  - --device=all
+  # Installs, removes, searches and launches apps with the host's flatpak
+  # (flatpak-spawn --host), always as `flatpak --user`, so no password is needed.
+  - --talk-name=org.freedesktop.Flatpak
+  # App icons from the Flathub data flatpak already keeps on the device.
+  - --filesystem=~/.local/share/flatpak/appstream:ro
+  - --filesystem=/var/lib/flatpak/appstream:ro
+
+build-options:
+  append-path: /usr/lib/sdk/rust-stable/bin
+  env:
+    CARGO_HOME: /run/build/arxis-deck/cargo
+    CARGO_NET_OFFLINE: 'true'
+
+modules:
+  - name: arxis-deck
+    buildsystem: simple
+    build-commands:
+      - cargo build --release --offline
+      - install -Dm755 target/release/arxis-deck /app/bin/arxis-deck
+      - install -Dm644 packaging/flatpak/io.github.fatih_bucaklioglu.ArxisDeck.desktop
+          /app/share/applications/io.github.fatih_bucaklioglu.ArxisDeck.desktop
+      - install -Dm644 packaging/flatpak/io.github.fatih_bucaklioglu.ArxisDeck.metainfo.xml
+          /app/share/metainfo/io.github.fatih_bucaklioglu.ArxisDeck.metainfo.xml
+      - install -Dm644 packaging/flatpak/io.github.fatih_bucaklioglu.ArxisDeck.svg
+          /app/share/icons/hicolor/scalable/apps/io.github.fatih_bucaklioglu.ArxisDeck.svg
+      # GPL-3.0-or-later, plus the licences of the crates compiled in.
+      - install -Dm644 LICENSE /app/share/licenses/io.github.fatih_bucaklioglu.ArxisDeck/LICENSE
+      - install -Dm644 THIRD-PARTY-LICENSES.md
+          /app/share/licenses/io.github.fatih_bucaklioglu.ArxisDeck/THIRD-PARTY-LICENSES.md
+    sources:
+      - type: dir
+        path: ../..
+        skip:
+          - target
+          - build
+          - .flatpak-builder
+          - arxis-deck.flatpak
+          - shots
+          - checks
+          - capture
+          - reference
+          - references
+          - investigation.cany
+          - inbox
+          - pinned
+          - attachments

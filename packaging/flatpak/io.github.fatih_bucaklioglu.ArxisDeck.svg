@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Same mark as the app's top bar: accent tile with a dark diamond. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fb8a3c"/>
+      <stop offset="1" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="30" fill="url(#tile)"/>
+  <rect x="44" y="44" width="40" height="40" fill="#070b14" transform="rotate(45 64 64)"/>
+  <rect x="58" y="58" width="12" height="12" fill="#fb8a3c" transform="rotate(45 64 64)"/>
+</svg>

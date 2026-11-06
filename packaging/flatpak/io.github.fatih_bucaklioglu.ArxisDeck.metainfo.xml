@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.fatih_bucaklioglu.ArxisDeck</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Arxis Deck</name>
+  <summary>Steam Deck store for software and game tools</summary>
+  <developer id="io.github.fatih_bucaklioglu">
+    <name>Fatih Bucaklioglu</name>
+  </developer>
+  <url type="homepage">https://github.com/fatih-bucaklioglu</url>
+  <description>
+    <p>
+      Arxis Deck is an app store made for Steam Deck Gaming Mode: full screen at 1280×800
+      and driven entirely by the controller.
+    </p>
+    <ul>
+      <li>Install compatibility tools, launchers, emulators and utilities from Flathub</li>
+      <li>Apps are installed for your user, so no password is needed and SteamOS updates keep them</li>
+      <li>Search all of Flathub with an on-screen keyboard</li>
+      <li>See downloads, installed apps and categories, and launch apps with A</li>
+      <li>Install Proton-GE for Steam and emulator AppImages from GitHub, with checksum checks</li>
+      <li>Larger text, reduced motion and Steam's on-screen keyboard for search</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">io.github.fatih_bucaklioglu.ArxisDeck.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <supports>
+    <control>gamepad</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+  <requires>
+    <display_length compare="ge">800</display_length>
+  </requires>
+  <releases>
+    <release version="0.2.0" date="2026-11-06">
+      <description>
+        <p>Steam Deck test build: Proton-GE and AppImage installs, app details and permissions before
+        installing, activity history, offline handling, About &amp; diagnostics, text size, reduced
+        motion and the Steam keyboard for search. Licensed GPL-3.0-or-later.</p>
+      </description>
+    </release>
+    <release version="0.1.0" date="2026-11-05">
+      <description>
+        <p>First test build: controller navigation, Flathub install, uninstall, search and launch.</p>
+      </description>
+    </release>
+  </releases>
+</component>

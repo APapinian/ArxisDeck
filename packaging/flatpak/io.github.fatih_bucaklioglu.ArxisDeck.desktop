@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Arxis Deck
+GenericName=App Store
+Comment=Steam Deck store for software and game tools, made for the controller
+Exec=arxis-deck
+Icon=io.github.fatih_bucaklioglu.ArxisDeck
+Terminal=false
+Categories=System;PackageManager;
+Keywords=store;flatpak;flathub;steam;deck;proton;emulator;
+StartupNotify=true

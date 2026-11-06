@@ -1,0 +1,629 @@
+{
+ "version": 1,
+ "values": [
+  {
+   "name": "design width",
+   "group": "display",
+   "value": 1280,
+   "unit": "px",
+   "source": "user request"
+  },
+  {
+   "name": "design height",
+   "group": "display",
+   "value": 800,
+   "unit": "px",
+   "source": "user request"
+  },
+  {
+   "name": "other screen sizes",
+   "group": "display",
+   "value": "uniform scale to fit",
+   "estimated": true
+  },
+  {
+   "name": "full screen in Gaming Mode",
+   "group": "display",
+   "value": true,
+   "estimated": true
+  },
+  {
+   "name": "update tick",
+   "group": "display",
+   "value": 16,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "screenshot frames",
+   "group": "display",
+   "value": 120,
+   "source": "Craft Anything requirement"
+  },
+  {
+   "name": "move focus",
+   "group": "controls",
+   "value": "D-pad or left stick",
+   "source": "user request"
+  },
+  {
+   "name": "confirm",
+   "group": "controls",
+   "value": "A",
+   "estimated": true
+  },
+  {
+   "name": "back",
+   "group": "controls",
+   "value": "B",
+   "estimated": true
+  },
+  {
+   "name": "add to downloads (controls)",
+   "group": "controls",
+   "value": "Y",
+   "source": "ARCHITECTURE.md §3.3 (Y = secondary actions)"
+  },
+  {
+   "name": "search",
+   "group": "controls",
+   "value": "X",
+   "source": "ARCHITECTURE.md §3.3 (X opens search)"
+  },
+  {
+   "name": "previous section",
+   "group": "controls",
+   "value": "L1",
+   "estimated": true
+  },
+  {
+   "name": "next section",
+   "group": "controls",
+   "value": "R1",
+   "estimated": true
+  },
+  {
+   "name": "page up",
+   "group": "controls",
+   "value": "L2",
+   "estimated": true
+  },
+  {
+   "name": "page down",
+   "group": "controls",
+   "value": "R2",
+   "estimated": true
+  },
+  {
+   "name": "options menu",
+   "group": "controls",
+   "value": "Start",
+   "estimated": true
+  },
+  {
+   "name": "downloads view",
+   "group": "controls",
+   "value": "Select",
+   "estimated": true
+  },
+  {
+   "name": "keyboard rows",
+   "group": "search",
+   "value": 5,
+   "estimated": true
+  },
+  {
+   "name": "keyboard row width",
+   "group": "search",
+   "value": 10,
+   "unit": "key units",
+   "estimated": true
+  },
+  {
+   "name": "keyboard starting key",
+   "group": "search",
+   "value": "q",
+   "estimated": true
+  },
+  {
+   "name": "type key",
+   "group": "search",
+   "value": "A",
+   "estimated": true
+  },
+  {
+   "name": "delete character",
+   "group": "search",
+   "value": "Y",
+   "estimated": true
+  },
+  {
+   "name": "space",
+   "group": "search",
+   "value": "X",
+   "estimated": true
+  },
+  {
+   "name": "close keyboard",
+   "group": "search",
+   "value": "Start or B (keeps text)",
+   "estimated": true
+  },
+  {
+   "name": "longest search text",
+   "group": "search",
+   "value": 24,
+   "unit": "characters",
+   "estimated": true
+  },
+  {
+   "name": "search matches",
+   "group": "search",
+   "value": "name or category, ignoring case",
+   "estimated": true
+  },
+  {
+   "name": "live filtering",
+   "group": "search",
+   "value": true,
+   "estimated": true
+  },
+  {
+   "name": "B in results clears search",
+   "group": "search",
+   "value": true,
+   "estimated": true
+  },
+  {
+   "name": "options menu entries",
+   "group": "menu",
+   "value": 5,
+   "estimated": true
+  },
+  {
+   "name": "options panel width",
+   "group": "menu",
+   "value": 400,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "add to downloads",
+   "group": "downloads",
+   "value": "Y",
+   "source": "ARCHITECTURE.md §3.3"
+  },
+  {
+   "name": "open downloads",
+   "group": "downloads",
+   "value": "Select",
+   "estimated": true
+  },
+  {
+   "name": "pause or resume",
+   "group": "downloads",
+   "value": "A",
+   "estimated": true
+  },
+  {
+   "name": "remove download",
+   "group": "downloads",
+   "value": "Y",
+   "source": "ARCHITECTURE.md §3.3"
+  },
+  {
+   "name": "simultaneous downloads",
+   "group": "downloads",
+   "value": 1,
+   "estimated": true
+  },
+  {
+   "name": "downloads kept between runs",
+   "group": "downloads",
+   "value": false,
+   "estimated": true
+  },
+  {
+   "name": "uninstall",
+   "group": "installed",
+   "value": "Y, then confirm in a dialog",
+   "source": "PROJECT.md §6"
+  },
+  {
+   "name": "installed shows",
+   "group": "installed",
+   "value": "finished simulated downloads",
+   "estimated": true
+  },
+  {
+   "name": "category columns",
+   "group": "categories",
+   "value": 3,
+   "estimated": true
+  },
+  {
+   "name": "category tile width",
+   "group": "categories",
+   "value": 376,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "category tile height",
+   "group": "categories",
+   "value": 258,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "categories",
+   "group": "categories",
+   "value": 6,
+   "estimated": true
+  },
+  {
+   "name": "B in category view",
+   "group": "categories",
+   "value": "back to Categories",
+   "estimated": true
+  },
+  {
+   "name": "themes",
+   "group": "settings",
+   "value": 8,
+   "source": "references/arxis README theme table (dark themes)"
+  },
+  {
+   "name": "default theme",
+   "group": "settings",
+   "value": "Arch Midnight",
+   "source": "references/arxis README theme table"
+  },
+  {
+   "name": "slow repeat delay",
+   "group": "settings",
+   "value": 500,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "slow repeat interval",
+   "group": "settings",
+   "value": 160,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "fast repeat delay",
+   "group": "settings",
+   "value": 300,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "fast repeat interval",
+   "group": "settings",
+   "value": 70,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "clock format",
+   "group": "settings",
+   "value": "24-hour",
+   "estimated": true
+  },
+  {
+   "name": "button hints",
+   "group": "settings",
+   "value": "Show",
+   "estimated": true
+  },
+  {
+   "name": "background glow",
+   "group": "settings",
+   "value": "On",
+   "estimated": true
+  },
+  {
+   "name": "text size large",
+   "group": "settings",
+   "value": 115,
+   "unit": "%",
+   "estimated": true
+  },
+  {
+   "name": "text size largest",
+   "group": "settings",
+   "value": 130,
+   "unit": "%",
+   "estimated": true
+  },
+  {
+   "name": "reduced motion animation time",
+   "group": "settings",
+   "value": 0,
+   "unit": "ms",
+   "source": "PROJECT.md §7 (respect reduced motion)"
+  },
+  {
+   "name": "default search keyboard",
+   "group": "settings",
+   "value": "Arxis",
+   "source": "PROJECT.md §7 (Steam virtual keyboard in Gaming Mode)"
+  },
+  {
+   "name": "settings save poll",
+   "group": "settings",
+   "value": 15,
+   "unit": "ticks",
+   "estimated": true
+  },
+  {
+   "name": "repeat delay",
+   "group": "navigation",
+   "value": 400,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "repeat interval",
+   "group": "navigation",
+   "value": 110,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "stick press threshold",
+   "group": "navigation",
+   "value": 0.6,
+   "estimated": true
+  },
+  {
+   "name": "stick release threshold",
+   "group": "navigation",
+   "value": 0.35,
+   "estimated": true
+  },
+  {
+   "name": "controller rescan",
+   "group": "navigation",
+   "value": 2000,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "grid columns",
+   "group": "navigation",
+   "value": 4,
+   "estimated": true
+  },
+  {
+   "name": "page jump",
+   "group": "navigation",
+   "value": 3,
+   "unit": "rows",
+   "estimated": true
+  },
+  {
+   "name": "wrap at row end",
+   "group": "navigation",
+   "value": false,
+   "estimated": true
+  },
+  {
+   "name": "wrap at last section",
+   "group": "navigation",
+   "value": false,
+   "estimated": true
+  },
+  {
+   "name": "focus remembered per section",
+   "group": "navigation",
+   "value": true,
+   "estimated": true
+  },
+  {
+   "name": "top bar height",
+   "group": "layout",
+   "value": 72,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "hint bar height",
+   "group": "layout",
+   "value": 48,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "card width",
+   "group": "layout",
+   "value": 276,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "card height",
+   "group": "layout",
+   "value": 162,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "focus outline",
+   "group": "layout",
+   "value": 3,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "focus zoom",
+   "group": "layout",
+   "value": 1.04,
+   "estimated": true
+  },
+  {
+   "name": "body text",
+   "group": "layout",
+   "value": 17,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "smallest focus target",
+   "group": "layout",
+   "value": 48,
+   "unit": "px",
+   "estimated": true
+  },
+  {
+   "name": "background colour",
+   "group": "layout",
+   "value": "#070b14",
+   "source": "references/arxis README theme table (Arch Midnight)"
+  },
+  {
+   "name": "accent colour",
+   "group": "layout",
+   "value": "#f97316",
+   "source": "references/arxis README theme table (Arch Midnight)"
+  },
+  {
+   "name": "store source",
+   "group": "store",
+   "value": "Flathub (flatpak --user)",
+   "source": "person's choice 2026-11-05"
+  },
+  {
+   "name": "starter apps",
+   "group": "store",
+   "value": 20,
+   "source": "flatpak search 2026-11-05"
+  },
+  {
+   "name": "uninstall confirmation",
+   "group": "store",
+   "value": "dialog, Cancel focused first",
+   "source": "PROJECT.md §6"
+  },
+  {
+   "name": "settings file",
+   "group": "settings",
+   "value": "~/.config/arxis-deck/config.toml",
+   "source": "ARCHITECTURE.md §8"
+  },
+  {
+   "name": "search delay",
+   "group": "store",
+   "value": 500,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "search minimum letters",
+   "group": "store",
+   "value": 2,
+   "estimated": true
+  },
+  {
+   "name": "search results kept",
+   "group": "store",
+   "value": 40,
+   "estimated": true
+  },
+  {
+   "name": "simulated progress step",
+   "group": "store",
+   "value": 0.05,
+   "estimated": true
+  },
+  {
+   "name": "simulated progress interval",
+   "group": "store",
+   "value": 100,
+   "unit": "ms",
+   "estimated": true
+  },
+  {
+   "name": "progress cap before done",
+   "group": "store",
+   "value": 0.99,
+   "estimated": true
+  },
+  {
+   "name": "install progress source",
+   "group": "store",
+   "value": "pseudo-terminal flatpak output",
+   "source": "real install test 2026-11-05"
+  },
+  {
+   "name": "real install round trip",
+   "group": "store",
+   "value": true,
+   "source": "--flatpak-roundtrip org.gnome.TextEditor, 2026-11-05"
+  },
+  {
+   "name": "icon size used",
+   "group": "store",
+   "value": 128,
+   "unit": "px",
+   "source": "flatpak appstream icon folders found 2026-11-05"
+  },
+  {
+   "name": "launch button",
+   "group": "store",
+   "value": "A on an installed app",
+   "estimated": true
+  },
+  {
+   "name": "update one",
+   "group": "store",
+   "value": "X in Installed",
+   "estimated": true
+  },
+  {
+   "name": "update all",
+   "group": "store",
+   "value": "Start in Installed",
+   "estimated": true
+  },
+  {
+   "name": "X button code (Xbox-style / Steam virtual pad)",
+   "group": "controls",
+   "value": "BTN_X 0x133",
+   "source": "SDL issue #6068; xpad label convention (xow #2, Arch FS#77845)"
+  },
+  {
+   "name": "Y button code (Xbox-style / Steam virtual pad)",
+   "group": "controls",
+   "value": "BTN_Y 0x134",
+   "source": "SDL issue #6068; xpad label convention (xow #2, Arch FS#77845)"
+  },
+  {
+   "name": "X and Y buttons setting",
+   "group": "settings",
+   "value": "Automatic",
+   "estimated": true
+  },
+  {
+   "name": "install sources",
+   "group": "store",
+   "value": "Flatpak, emulators, Proton/compat tools, GitHub releases, AppImage, Decky plugins (not AUR)",
+   "source": "person's decision 2026-11-05"
+  },
+  {
+   "name": "Proton-GE releases shown",
+   "group": "store",
+   "value": 3,
+   "estimated": true
+  },
+  {
+   "name": "Proton-GE checksum",
+   "group": "store",
+   "value": "SHA-512",
+   "source": "GitHub release assets (.sha512sum), 2026-11-05"
+  }
+ ]
+}

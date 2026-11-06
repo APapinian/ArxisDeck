@@ -1,0 +1,20 @@
+[package]
+name = "arxis-deck"
+version = "0.2.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+authors = ["Fatih Bucaklioglu"]
+description = "Arxis Deck: a Steam Deck store for software and game tools, made for the controller"
+build = "build.rs"
+
+# Crates per docs/architecture-decisions/ADR-0001 (licences in docs/research/license-review.md),
+# vendored in vendor/ for offline builds. Qt is reached through src/qt/bridge.cpp (build.rs).
+[dependencies]
+rusqlite = { version = "0.41.1", features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", default-features = false, features = ["fmt", "std"] }
+
+[profile.release]
+opt-level = 3

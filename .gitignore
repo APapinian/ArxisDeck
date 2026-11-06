@@ -1,0 +1,20 @@
+# Build output
+/target/
+/build/
+/.flatpak-builder/
+*.flatpak
+
+# Local tool and session files (not part of the project)
+/build-activity.log
+/craft.json
+/feed.json
+/usage.json
+/checks/
+/shots/
+/capture/
+/inbox/
+/pinned/
+/investigation.cany/
+/reference/
+/references/
+/attachments/
