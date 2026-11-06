@@ -9,7 +9,8 @@ Arxis Deck is licensed under the **GNU General Public License, version 3 or (at 
 any later version** (SPDX `GPL-3.0-or-later`).
 
 **Copyright:** © 2026 Fatih Bucaklioglu, the owner named in the app ID
-(`io.github.fatih_bucaklioglu.ArxisDeck`) and the GitHub address.
+(`io.github.APapinian.ArxisDeck`) and the GitHub address (github.com/APapinian, formerly
+fatih-bucaklioglu).
 
 ## Why
 

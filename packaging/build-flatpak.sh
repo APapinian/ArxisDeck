@@ -8,7 +8,7 @@
 # org.flatpak.Builder, org.kde.Sdk 6.11 and the Rust SDK extension 25.08.
 set -eu
 
-ID=io.github.fatih_bucaklioglu.ArxisDeck
+ID=io.github.APapinian.ArxisDeck
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 cd "$ROOT"
 

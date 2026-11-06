@@ -197,7 +197,7 @@ by 5.5 % (panel), 7.5 % (card), 11 % (focused card), 12 % (raised), 14 % (border
 
 | Value | Setting | Source |
 |---|---|---|
-| Format | Flatpak bundle `arxis-deck.flatpak`, app ID io.github.fatih_bucaklioglu.ArxisDeck | estimated (ID can still change) |
+| Format | Flatpak bundle `arxis-deck.flatpak`, app ID io.github.APapinian.ArxisDeck | estimated (ID can still change) |
 | Runtime | org.kde.Platform 6.11 (Qt 6.11), built with org.kde.Sdk 6.11 + rust-stable 25.08 | `flatpak info` of the installed KDE runtime, 2026-11-05 |
 | Sandbox permissions | ipc, wayland, fallback-x11, all devices (controller + GPU), talk to org.freedesktop.Flatpak, read-only Flathub appstream folders | estimated |
 | Getting it into Gaming Mode | install the bundle in Desktop Mode, then Steam → Add a Non-Steam Game | estimated |

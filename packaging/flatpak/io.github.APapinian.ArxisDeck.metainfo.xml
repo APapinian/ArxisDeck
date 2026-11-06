@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.fatih_bucaklioglu.ArxisDeck</id>
+  <id>io.github.APapinian.ArxisDeck</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <name>Arxis Deck</name>
   <summary>Steam Deck store for software and game tools</summary>
-  <developer id="io.github.fatih_bucaklioglu">
+  <developer id="io.github.APapinian">
     <name>Fatih Bucaklioglu</name>
   </developer>
-  <url type="homepage">https://github.com/fatih-bucaklioglu</url>
+  <url type="homepage">https://github.com/APapinian/ArxisDeck</url>
+  <url type="bugtracker">https://github.com/APapinian/ArxisDeck/issues</url>
+  <url type="vcs-browser">https://github.com/APapinian/ArxisDeck</url>
   <description>
     <p>
       Arxis Deck is an app store made for Steam Deck Gaming Mode: full screen at 1280×800
@@ -23,7 +25,7 @@
       <li>Larger text, reduced motion and Steam's on-screen keyboard for search</li>
     </ul>
   </description>
-  <launchable type="desktop-id">io.github.fatih_bucaklioglu.ArxisDeck.desktop</launchable>
+  <launchable type="desktop-id">io.github.APapinian.ArxisDeck.desktop</launchable>
   <content_rating type="oars-1.1"/>
   <supports>
     <control>gamepad</control>
@@ -34,6 +36,12 @@
     <display_length compare="ge">800</display_length>
   </requires>
   <releases>
+    <release version="0.2.1" date="2026-11-06">
+      <description>
+        <p>New app ID io.github.APapinian.ArxisDeck, matching the GitHub account (formerly
+        fatih-bucaklioglu). Remove 0.2.0 first: it used the old ID.</p>
+      </description>
+    </release>
     <release version="0.2.0" date="2026-11-06">
       <description>
         <p>Steam Deck test build: Proton-GE and AppImage installs, app details and permissions before

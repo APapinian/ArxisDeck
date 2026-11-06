@@ -4,7 +4,7 @@
 # matches its base (KDE 6.11 is built on freedesktop 25.08). The Rust crates are vendored in
 # vendor/, so the build runs fully offline. See packaging/README.md for the steps.
 
-id: io.github.fatih_bucaklioglu.ArxisDeck
+id: io.github.APapinian.ArxisDeck
 runtime: org.kde.Platform
 runtime-version: '6.11'
 sdk: org.kde.Sdk
@@ -37,16 +37,16 @@ modules:
     build-commands:
       - cargo build --release --offline
       - install -Dm755 target/release/arxis-deck /app/bin/arxis-deck
-      - install -Dm644 packaging/flatpak/io.github.fatih_bucaklioglu.ArxisDeck.desktop
-          /app/share/applications/io.github.fatih_bucaklioglu.ArxisDeck.desktop
-      - install -Dm644 packaging/flatpak/io.github.fatih_bucaklioglu.ArxisDeck.metainfo.xml
-          /app/share/metainfo/io.github.fatih_bucaklioglu.ArxisDeck.metainfo.xml
-      - install -Dm644 packaging/flatpak/io.github.fatih_bucaklioglu.ArxisDeck.svg
-          /app/share/icons/hicolor/scalable/apps/io.github.fatih_bucaklioglu.ArxisDeck.svg
+      - install -Dm644 packaging/flatpak/io.github.APapinian.ArxisDeck.desktop
+          /app/share/applications/io.github.APapinian.ArxisDeck.desktop
+      - install -Dm644 packaging/flatpak/io.github.APapinian.ArxisDeck.metainfo.xml
+          /app/share/metainfo/io.github.APapinian.ArxisDeck.metainfo.xml
+      - install -Dm644 packaging/flatpak/io.github.APapinian.ArxisDeck.svg
+          /app/share/icons/hicolor/scalable/apps/io.github.APapinian.ArxisDeck.svg
       # GPL-3.0-or-later, plus the licences of the crates compiled in.
-      - install -Dm644 LICENSE /app/share/licenses/io.github.fatih_bucaklioglu.ArxisDeck/LICENSE
+      - install -Dm644 LICENSE /app/share/licenses/io.github.APapinian.ArxisDeck/LICENSE
       - install -Dm644 THIRD-PARTY-LICENSES.md
-          /app/share/licenses/io.github.fatih_bucaklioglu.ArxisDeck/THIRD-PARTY-LICENSES.md
+          /app/share/licenses/io.github.APapinian.ArxisDeck/THIRD-PARTY-LICENSES.md
     sources:
       - type: dir
         path: ../..

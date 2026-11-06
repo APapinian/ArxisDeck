@@ -3,7 +3,8 @@
 Arxis Deck is packaged as a Flatpak, like most apps on SteamOS. Qt comes from the KDE
 runtime on Flathub, so the package itself is small, and SteamOS updates don't remove it.
 
-App ID: `io.github.fatih_bucaklioglu.ArxisDeck` (can still be changed before a public release).
+App ID: `io.github.APapinian.ArxisDeck` (GitHub account APapinian, formerly fatih-bucaklioglu).
+Source and releases: https://github.com/APapinian/ArxisDeck/releases
 
 ## 1. Build the package (on a Linux PC, or on the Deck in Desktop Mode)
 
@@ -29,6 +30,14 @@ result is one file: `arxis-deck.flatpak`.
    Answer **y** when it asks to add Flathub and install the KDE runtime (about 400 MB the first
    time; the Deck may already have it). No password is needed.
 4. To update later, run the same command with a newer file and `--reinstall`.
+5. Coming from 0.2.0 or older? Those used the old ID `io.github.fatih_bucaklioglu.ArxisDeck`, so
+   remove that first (your settings stay in `~/.var/app/`, under the old name):
+
+   ```sh
+   flatpak uninstall --user io.github.fatih_bucaklioglu.ArxisDeck
+   ```
+
+   In Steam, remove the old non-Steam shortcut and add Arxis Deck again.
 
 ## 3. Add it to Steam so it opens in Gaming Mode
 

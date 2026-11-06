@@ -609,7 +609,7 @@ pub fn parse_columns(out: &str, n: usize) -> Vec<Vec<String>> {
 }
 
 /// Arxis Deck's own Flatpak app ID; it is left out of the Installed list.
-pub const SELF_ID: &str = "io.github.fatih_bucaklioglu.ArxisDeck";
+pub const SELF_ID: &str = "io.github.APapinian.ArxisDeck";
 
 pub fn installed_json() -> Result<String, String> {
     let out = run(&["list", "--user", "--app", "--columns=application,name,version"])?;
