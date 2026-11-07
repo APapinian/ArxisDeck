@@ -26,6 +26,28 @@
     </ul>
   </description>
   <launchable type="desktop-id">io.github.APapinian.ArxisDeck.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Flathub tools picked for Steam Deck</caption>
+      <image>https://raw.githubusercontent.com/APapinian/ArxisDeck/main/docs/screenshots/discover.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>App details before installing</caption>
+      <image>https://raw.githubusercontent.com/APapinian/ArxisDeck/main/docs/screenshots/details.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Proton-GE releases from GitHub</caption>
+      <image>https://raw.githubusercontent.com/APapinian/ArxisDeck/main/docs/screenshots/proton-ge.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>About and diagnostics</caption>
+      <image>https://raw.githubusercontent.com/APapinian/ArxisDeck/main/docs/screenshots/about.png</image>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#f6a26b</color>
+    <color type="primary" scheme_preference="dark">#9a3f0c</color>
+  </branding>
   <content_rating type="oars-1.1"/>
   <supports>
     <control>gamepad</control>
